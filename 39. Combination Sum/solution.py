@@ -1,5 +1,5 @@
 class Solution:
-    def combinationSum(self, candidates:[int], target: int) -> [[int]]:
+    def combinationSum(self, candidates, target) :
         def dfs(candidates, start, target, path, res):
             if target == 0 :
                 return res.append(path + [])
